@@ -11,12 +11,11 @@ module.exports = {
     ]
   },
   resolve: {
-    // alias: {
-    //   hooks: resolve(__dirname, "src/hooks"),
-    //   theme: resolve(__dirname, "src/theme"),
-    //   types: resolve(__dirname, "src/types"),
-    //   utils: resolve(__dirname, "src/utils")
-    // },
+    alias: {
+      react: resolve(__dirname, 'node_modules/react'),
+      'react-dom': resolve(__dirname, 'node_modules/react-dom'),
+      'styled-components': resolve(__dirname, 'node_modules/styled-components')
+    },
     extensions: [".js", ".ts", ".tsx"] // NOTE 1
   }
 };
